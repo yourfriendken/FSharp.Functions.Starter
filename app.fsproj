@@ -4,7 +4,8 @@
     <!-- <AzureFunctionsVersion>v2</AzureFunctionsVersion> -->
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="*.fs" />
+    <Compile Include="Helpers/*" />
+    <Compile Include="Data/*" />
     <Compile Include="Triggers/*" />
     <None Include="host.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
