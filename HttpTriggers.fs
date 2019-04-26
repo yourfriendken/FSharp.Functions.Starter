@@ -6,7 +6,7 @@ open Microsoft.Azure.WebJobs.Extensions.Http
 open Models
 open HttpHelpers
 
-module HttpRoutes =
+module HttpTriggers =
     [<FunctionName("ping")>]
     let ping ([<HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "ping")>] req : HttpRequestMessage) =
         let data =

@@ -6,7 +6,7 @@
   <ItemGroup>
     <Compile Include="Models.fs" />
     <Compile Include="HttpHelpers.fs" />
-    <Compile Include="HttpRoutes.fs" />
+    <Compile Include="HttpTriggers.fs" />
     <None Include="host.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
