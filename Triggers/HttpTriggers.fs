@@ -7,9 +7,9 @@ open Models
 open HttpHelpers
 
 module HttpTriggers =
-    [<FunctionName("ping")>]
+    [<FunctionName("Ping")>]
     let ping ([<HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "ping")>] req : HttpRequestMessage) =
         let data =
-            { Name = "Ping"
+            { Name = "Pong!"
               Description = "This route is used to test if the app is running" }
         JsonOkResponse data
