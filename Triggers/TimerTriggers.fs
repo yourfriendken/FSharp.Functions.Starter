@@ -1,11 +1,10 @@
 namespace App
 
-// open Microsoft.Azure.WebJobs
+open Microsoft.Azure.WebJobs
 
 module TimerTriggers =
-    // [<FunctionName("Timer")>]
-    // let Timer ([<TimerTrigger("* * * * * *")>] timer:TimerInfo) =
-    //     let status = timer.ScheduleStatus 
-    //     let date = status.LastUpdated.ToLongDateString() 
-    //     System.Console.WriteLine(date)
+    // Uncomment to register function - only works with AzureWebJobsStorage set in local.settings.json
+    // [<FunctionName("Timer")>] 
+    let Timer ([<TimerTrigger("* * * * * *")>] timer:TimerInfo) =
+        System.Console.WriteLine(System.DateTime.Now.ToLongTimeString())
     ()
