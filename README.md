@@ -23,6 +23,12 @@ Or run Visual Studio Code task: `func: host start`
 ## Debug
 Use Visual Studio Code: Start debugger `Debug Functions App`
 
+## Test
+```bash
+dotnet test ./Tests
+```
+Or run Visual Studio Code task: `test`
+
 ## Prerequisites
 * [.NET CLI tools](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x)
 * [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) 
